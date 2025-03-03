@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FEFBF0;
+}
+
+.heroSection {
+    background-image: url('../assets/Images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+}
+
+.tastingSection {
+    background-image: url('../assets/Images/tasting.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.testingHeader {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tastingParagraph {
+    font-family: Heebo;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
