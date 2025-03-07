@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="stylesheet" href="../Css/winebar.css" />
+    <title>WINE BAR</title>
+  </head>
+  <body class="flex items-center justify-center flex-col">
+    <!--Appbar-->
+    <header class="w-full">
+      <nav
+        class="md:bg-transparent bg-[#252A2F] md:static fixed top-0 right-0 w-full border-gray-200 px-4 lg:px-6 md:py-3 py-4"
+      >
+        <div class="flex justify-between items-center mx-auto max-w-screen-xl">
+          <!-- Logo -->
+          <a
+            href="#"
+            class="text-xl font-semibold whitespace-nowrap logo text-[#6b6a68]"
+            style="font-family: 'Oswald', sans-serif"
+          >
+            Van Arte
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex w-full justify-between items-center">
+            <ul class="flex space-x-8 ml-auto">
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >VAN ARTE</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >WIJNBAR</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >DRANKEN</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >ETEN</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >EVENTS</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >SFEER</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >CULTUUR</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#6b6a68] text-sm hover:text-[#f5f5f5]"
+                  >KALENDER</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button
+              title="toogle button"
+              id="menu-toggle"
+              class="p-2 text-gray-500 rounded-lg focus:ring-2 focus:ring-gray-200"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden flex flex-col items-center bg-[#252A2F] w-full py-4 absolute top-14 left-0"
+        >
+          <ul class="flex flex-col space-y-4">
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >VAN ARTE</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >WIJNBAR</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >DRANKEN</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >ETEN</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >EVENTS</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >SFEER</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >CULTUUR</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white text-sm hover:text-[#f5f5f5]"
+                >KALENDER</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--HERO SECTION-->
+    <main
+      class="relative h-[70vh] wine-heroSection flex flex-col items-start justify-center bg-[#fffcf0] md:w-[80%] md:my-[50px]"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div
+        class="relative z-10 text-white p-4 text-center w-full uppercase text-8xl font-bold tracking-wider"
+      >
+        WIJN BAR
+      </div>
+    </main>
+
+    <aside class="text-[#222] font-sans p-12">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-5xl font-normal tracking-widest uppercase text-left">
+          Wijnbar Van Arte
+        </h1>
+        <p class="text-lg mt-2 font-normal text-left">
+          Wijn én meer in een hartelijke sfeer
+        </p>
+
+        <p class="mt-4 text-left leading-relaxed text-[#85847f]">
+          In onze stijl- en sfeervolle setting komen wijn én mensen samen op een
+          leuke en laagdrempelige manier. Op het menu een spannende selectie
+          wijnen per glas in alle prijs- en smaakklassen, en nog groter en
+          gevarieerder gamma wijnen per fles en heerlijke huisgemaakte hapjes.
+          Met kennis van zaken én smaken verwelkomt onze enthousiaste equipe
+          jullie met open armen en flessen.
+        </p>
+
+        <h2
+          class="text-2xl font-normal uppercase mt-12 tracking-wide text-left"
+        >
+          Heerlijk Sharen met het Nieuwe Barfood Menu voor 39 Euro per Persoon!
+        </h2>
+
+        <h3 class="text-lg font-normal mt-6 uppercase tracking-wide text-left">
+          Ontdek hier het smakelijke Van Arte-menu
+        </h3>
+
+        <!-- Cold Delicacies -->
+        <h3 class="text-2xl font-normal mt-8 tracking-wide text-left">
+          Koude ‘Deel’iccatessen
+        </h3>
+        <ul class="mt-4 space-y-2 text-lg">
+          <li class="font-medium text-[#85847f]">
+            • Kalamata olijven en koningskappers met kruiden
+            <strong>4.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Krokant gebakken brood met extra vergine olijfolie en gezouten
+            hoeveboter <strong>7.50</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Manchegokaas met truffelhoning <strong>8.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Pinsabroodje met olijven, gezouten ansjovisfilet,
+            kappertjesmayonaise en kwartel ei <strong>11.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Kaasbordje Van Arte – 3 gerijpte kazen met krokant brood en
+            chutney <strong>15.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Van Artes cut: Jamón serrano en Italiaanse salami met olijven,
+            koningskappers, brood met dips en manchegokaas
+            <strong>25.00</strong>
+          </li>
+        </ul>
+
+        <!-- Freshly Sliced -->
+        <h3 class="text-2xl font-normal mt-12 tracking-wide text-left">
+          Vers Gesneden op de Berkel
+        </h3>
+        <ul class="mt-4 space-y-2 text-lg">
+          <li class="font-medium text-[#85847f]">
+            • Spianata met truffel (Italiaanse salami) <strong>9.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Jamón serrano (90g) <strong>13.00</strong>
+          </li>
+        </ul>
+
+        <!-- Warm Delicacies -->
+        <h3 class="text-2xl font-normal mt-12 tracking-wide text-left">
+          Warme ‘Deel’iccatessen
+        </h3>
+        <ul class="mt-4 space-y-2 text-lg">
+          <li class="font-medium text-[#85847f]">
+            • Warme pitabroodjes met dips <strong>6.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Gehaktballetjes Van Arte <strong>8.50</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Warme camembert met veenbessen, rozemarijn en dippers
+            <strong>11.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Mango-kipballetjes met salade en frissezoete yoghurtdip
+            <strong>13.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Serrano-kipballetjes (6 st) met “smokey bbq”-dip
+            <strong>13.50</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Beignets van krab en garnaal met limoen-koriandermayo
+            <strong>14.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Patatas bravas met pulled chicken
+            <strong>14.00</strong>
+          </li>
+        </ul>
+
+        <!-- Desserts -->
+        <h3 class="text-2xl font-normal mt-12 tracking-wide text-left">
+          THERE’S ALWAYS ROOM FOR DESSERT
+        </h3>
+        <ul class="mt-4 space-y-2 text-lg">
+          <li class="font-medium text-[#85847f]">
+            • Chocolade lava cake met vanille-ijs <strong>8.50</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Cheesecake met bosvruchtencoulis <strong>7.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">
+            • Huisgemaakte tiramisu <strong>8.00</strong>
+          </li>
+        </ul>
+
+        <!-- Drinks -->
+        <h3 class="text-2xl font-normal mt-12 tracking-wide text-left">
+          hoofdgerechten (kunnen besteld worden tot 21u30)
+        </h3>
+        <ul class="mt-4 space-y-2 text-lg">
+          <li class="font-medium text-[#85847f]">
+            • Wijn per glas vanaf <strong>6.00</strong>
+          </li>
+          <li class="font-medium text-[#85847f]">•</li>
+        </ul>
+      </div>
+
+      <div class="mx-auto text-left mt-[50px]">
+        <h1 class="text-xl font-semibold tracking-widest mb-2">MENU</h1>
+        <p class="uppercase font-semibold text-sm tracking-wide">Sharing Menu vanaf twee personen</p>
+        <p class="text-sm italic mb-6">(Kan besteld worden tot 21u30) 38 euro per persoon</p>
+
+        <h2 class="font-semibold text-lg mb-2">Delicatessen:</h2>
+        <ul class="text-sm space-y-2 text-[#85847f]">
+            <li>• Mango-kipballetjes met salie en friszoete yoghurtdip</li>
+            <li>• Pinsabroodje met olijven, gezouten ansjovis fi met kappertjesmayonaise en kwartelei</li>
+            <li>• Beignets van krab en garnaal met limoen-koriandermayo</li>
+        </ul>
+
+        <h2 class="font-semibold text-lg mt-6 mb-2">De pan op tafel (keuze uit één pan per twee personen)</h2>
+        <ul class="text-sm space-y-2 text-[#85847f]">
+            <li>• Verse linguini met gehaktballetjes in tomatensaus</li>
+            <li>• Verse linguini met mascarpone, groene kruiden en gerookte zalm</li>
+            <li>• Triangoli met truffel en eekhoorntjesbrood, olijfolie, grof zeezout en parmiggiano</li>
+        </ul>
+
+        <h2 class="font-semibold text-lg mt-6 mb-2">There's Always Room for Dessert</h2>
+        <ul class="text-sm space-y-2 text-[#85847f]">
+            <li>• Ambachtelijke ijspralines van het Zoersels e ijstaartenhuis</li>
+            <li class="font-semibold">OF</li>
+            <li>• Mascarpone met framboos, brownie en salted caramel - suppl. 2.50 euro</li>
+        </ul>
+    </div>
+  </div>
+</aside>
+
+<section class="w-full flex flex-col justify-center items-center mt-[50px] mb-[50px]">
+
+  <div class="md:w-[80%] w-[90%] items-center justify-center flex flex-col gap-5">
+    <img src="../assets/Images/Aperitivo+-+elke+derde+vrijdag+van+de+maand+-+fb+event.jpg" class="md:w-[60%] w-[95%]" alt="" srcset="">
+    <img src="../assets//Images/VAN+ARTE+LOGO+BLOK+.jpg" alt="" srcset="">
+
+    <div class="w-full items-center justify-center flex flex-col gap-3 mt-12">
+      <address>VAN ARTE – Handelslei 115, 2980 St. Antonius-Zoersel – www.vanarte.be </address>
+      <p>open: donderdag, vrijdag en zaterdag vanaf 18.00u</p>
+      <h5>Graag online reserveren, zo ben je zeker van je plaats!</h5>
+    </div>
+
+    <img src="../assets/Images/©Lucid_VanArte_23_LOW.jpg" class="md:w-[60%] w-[95%] mb-4" alt="" srcset="">
+
+    <hr class="w-[70%]">
+  </div>
+
+  <div class="max-w-4xl mx-auto p-6 text-[#85847f] font-serif gap-[50px]">
+    <h1 class="text-2xl font-bold uppercase tracking-wide text-[#000]">VAN ARTE: EEN BRUISEND BELEVINGSCENTRUM MET WIJN IN DE HOOFDROL</h1>
+    
+    <p class="mt-4">Van Arte is veel meer dan een wijnbar. De locatie vormt het dynamische decor van allerlei Artevinoactiviteiten die de smakelijke schijnwerpers richten op wijn.</p>
+    
+    <h2 class="mt-6 font-bold uppercase text-[#000]">EEN GREEP UIT HET AANBOD:</h2>
+    
+    <p class="mt-2">Artevino’s grote degustaties zijn voor heel wat wijnliefhebbers halfjaarlijkse hoogtepunten.</p>
+    <p>Op 13 en 14 mei vormt Van Arte de knappe locatie van Artevino’s <a href="#" class="text-[#85847f] underline">lentegustatie</a>. De hele ploeg gidst je door een gulle greep uit het aanbod. Maak je kelder of je wijnkast klaar voor de leukste periode van het jaar! <a href="#" class="text-[#85847f] underline">Ontdek meer...</a></p>
+    
+    <p class="mt-4">Artevino is ook dé perfecte partner voor een groot en gevarieerd gamma <span class="font-bold">privédegustaties</span>, waarin we menselijk maatwerk leveren. Van Arte leent zich zowel tot knusse degustaties in kleine kring als tot grootschaligere gebeurtenissen. <a href="#" class="text-[#85847f] underline">Ontdek hier de verschillende formules.</a></p>
+    
+    <p class="mt-4">Laagdrempelige lessen tussen de fantastische flessen? Van Arte is vanaf nu ook de locatie van de leukste én lekkerste lessenreeks in de wijde omgeving: de <a href="#" class="text-[#85847f] underline">cursus wijnproever in vier dagen</a> is dé manier om veel over wijn te leren en binnen de kortste keren als een pro te degusteren. <a href="#" class="text-[#85847f] underline">Ontdek er alles over.</a></p>
+    
+    <p class="mt-4">Zin om in vertrouwd gezelschap iets bij te leren en een lessenreeks voor jou en je vrienden te organiseren? Ook dat kan voor groepjes vanaf 10 personen! Interesse in <span class="font-bold">‘privélessen’</span>? Stuur een mailtje naar <a href="mailto:frank@artevino.be" class="text-[#85847f] underline">frank@artevino.be</a></p>
+    
+    <p class="mt-4">Speciaal voor studerende jongeren met een beperkt budget organiseren we ook een cursus met een prettig prijskaartje. In de lessenreeks <span class="font-bold">‘Van Cara naar cava’</span> dompelen we jongeren die de overstap willen maken van kwantiteit naar kwaliteit onder in de wondere wijnwereld.</p>
+
+    <p class="mt-4">Van Arte wordt ook het coolste ‘clubhuis’ van de Lage Landen als thuisbasis van<a href="#" class="text-[#85847f] underline"> Juiceday, Artevino’s wijnclub.</a>  Zin om verrassende wijnen te proeven en enkele uren in goed gezelschap te vertoeven? Juiceday is er voor iedereen! Jong en oud, connaisseur en absolute amateur: iedereen Van Arte welkom.</p>
+  </div>
+
+  <aside class="md:w-[60%] w-full mt-[50px]">
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/Van+Arte+terras+15+-+kopie (1).png" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/beignet+krab+garnaal+-+kopie.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/Van+Arte+-+interior+-+kopie.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/001.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/002.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/003.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/004.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/005.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/006.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/007.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/008.png" alt="">
+        </div>
+        <div>
+            <img class="h-[200px] w-[200px] rounded-lg" src="../assets/Images/009.jpg" alt="">
+        </div>
+    </div>
+    
+
+  </aside>
+
+</section>
+
+
+    <!-- Chat Button -->
+    <div class="fixed bottom-6 right-6">
+      <button class="bg-blue-500 text-white rounded-full p-4 shadow-lg">
+        💬
+      </button>
+      <p class="text-sm mt-2 text-gray-700">Wil je graag reserveren?</p>
+    </div>
+
+        <!--FOOTER STARTS HERE-->
+        <footer class="p-6 bg-black w-full">
+          <div class="mx-auto max-w-screen-xl flex flex-wrap justify-between">
+            <!-- Contact Info -->
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+              <h2 class="mb-4 text-sm font-semibold text-white uppercase">
+                Van Arte
+              </h2>
+              <ul class="text-gray-400">
+                <li class="mb-2">Handelslei 115</li>
+                <li class="mb-2">2980 Sint-Antonius-Zoersel</li>
+                <li class="mb-2">Email: info@vanarte.be</li>
+                <li class="mb-2">
+                  Telefoon tijdens openingsuren wijnbar: 0476/232.709 (reserveringen
+                  bij voorkeur online aub)
+                </li>
+                <li class="mb-2">
+                  Wijnbar open: donderdag, vrijdag en zaterdag vanaf 18u
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+              <h2 class="mb-4 text-sm font-semibold text-white uppercase">
+                Van Arte
+              </h2>
+              <ul class="text-gray-400">
+                <li class="mb-2">
+                  <a href="#" class="hover:underline">Contact</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="w-full md:w-1/3">
+              <h2 class="mb-4 text-sm font-semibold text-white uppercase">
+                Newsletter
+              </h2>
+              <form class="flex flex-col p-2 md:flex-row">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="border border-gray-300 text-gray-900 md:w-64 p-2 focus:border-blue-500"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="text-white uppercase bg-transparent hover:bg-white hover:text-black border-2 border-white px-4 py-2 mt-2 md:mt-0 md:ml-2"
+                >
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+    
+          <!-- Divider -->
+          <hr class="my-6 border-gray-700" />
+        </footer>
+
+    <script src="../Javascript/script.js"></script>
+  </body>
+</html>
