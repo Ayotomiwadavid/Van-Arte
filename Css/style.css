@@ -44,3 +44,10 @@ body{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
+
+.event-heroSection{
+    background-image: url('../assets/Images/eventHero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
